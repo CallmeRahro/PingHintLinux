@@ -44,7 +44,8 @@ esac
 read -p "What is your $(ColorRed 'PingHint') $(ColorGreen 'password')? " -s password
 #password=""
 echo -e " \n "
-echo -e $green "Connecting to $phuser" $clearcol
+echo -e $green "Connecting to" $clearcol
+echo "$phuser"
 echo -e "\n"
 
 auth_file=$(mktemp)
